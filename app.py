@@ -78,7 +78,7 @@ async def siege_start(request):
     service = request.rel_url.query['service']
 
     duration = float(request.rel_url.query.get('duration', '600'))
-    clients = int(request.rel_url.query.get('clients', '300'))
+    clients = int(request.rel_url.query.get('clients', '3'))
     delay = float(request.rel_url.query.get('delay', '0.25'))
 
     siege_end_time = time.time() + duration
